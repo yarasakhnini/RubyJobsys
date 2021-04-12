@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>login and regestertion</title>
+</head>
+<body>
+<h1>login</h1>
+<form action="/jpb_sessions" method="POST">
+<input type="hidden" name"authenticity_token" value="<%=form_authenticity_token%>">
+<input type="email" name="login[password]" placeholder="password">
+<input type="submit" name="submit" class="submit">
+</form>
+<h1>Regestiration</h1>
+<form action="/userss" method="POST">
+<input type="hidden" name"authenticity_token" value="<%=form_authenticity_token%>">
+<input type="user[email]" name="user[email]" placeholder="email">
+<input type="user[password]" name="password" class="submit">
+<input type="submit" name="submit" class="submit">
+
+</form>
+
+</body>
+</html>
